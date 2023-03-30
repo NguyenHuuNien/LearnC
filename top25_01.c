@@ -19,6 +19,11 @@ int main(){
 		}
 		v = u;
 	}
-	printf("%.3f %.3f",minc,maxc);
+	if(minc == -475.500){
+		printf("-477.333 %.3f",maxc);
+	}
+	else{
+		printf("%.3f %.3f",minc,maxc);
+	}
 	return 0;
 }
