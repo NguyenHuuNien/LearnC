@@ -1,13 +1,13 @@
 #include<stdio.h>
-
+ 
 int main(){
-	unsigned char title[40],isbn[25];
-	unsigned int price, quantity,total;
+	char title[40],isbn[25];
+	int price, quantity,total;
 	const double vat = 5;
 	//----------------
 	gets(title);
 	scanf("%d",&price);
-	scanf("%d",&quantity);
+	scanf("%d\n",&quantity);
 	//fflush(stdin);
 	gets(isbn);
 	//----------------
