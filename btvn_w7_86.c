@@ -9,9 +9,9 @@ int main(){
 		b = temp;
 	}
 	while(b>0){
-		int r = a%b;
-		a = b;
-		b = r;
+		int r = a%b; // r=0
+		a = b; //a=3
+		b = r; // b=0
 	}
 	printf("%d",tich/a);
 }
