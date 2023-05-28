@@ -1,40 +1,31 @@
 #include<stdio.h>
+#include<string.h>
+void trai(char *s){
+    int len=strlen(s);
+    char tmp =s[0];
+    for(int i=0; i<len; i++){
+        s[i]=s[i+1];
+    }
+    s[len-1]=tmp;
+}
+void phai(char *s){
+    int len=strlen(s);
+    char tmp =*(s+len-1);
+    for(int i=0; i<len-1; i++){
+        *(s+i+1)=*(s+i);
+    }
+    *s=tmp;
+}
 int main(){
-    char name1[20],name2[20],que1[14],que2[14];
-    int tuoi1,tuoi2;
-    fgets(name1,20,stdin);
-    fgets(que1,14,stdin);
-    scanf(" %d ", &tuoi1);
-    fgets(name2,20,stdin);
-    fgets(que2,14,stdin);
-    scanf("%d", &tuoi2);
-    printf("Nhap thong tin sinh vien 1:");
-    printf("\n- Ten: %s",name1);
-    printf("- Que quan: %s",que1);
-    printf("- Tuoi: %d",tuoi1);
-    printf("\nNhap thong tin sinh vien 2:");
-    printf("\n- Ten: %s", name2);
-    printf("- Que quan: %s",que2);
-    printf("- Tuoi: %d\n",tuoi2);
-
-
-    printf("Cac sinh vien da nhap vao:");
-    printf("\n*-----------------------------------------------*");
-    printf("\n| Ten | Que quan | Tuoi |");
-    printf("\n*-----------------------------------------------*"); 
-    printf("| %s | %s | %d |\n",name1,que1,tuoi1);
-    printf("\n*-----------------------------------------------*\n");
-    printf("| %s | %s | %d |",name2,que2,tuoi2);
-    printf("\n*-----------------------------------------------*");
- 
-
-
-
-
-
-
-
-
+    char s1[100];
+    char s2[100];
+    gets(s1);
+    gets(s2);
+    trai(s1);
+    printf("%s",s1);
+    printf("\n");
+    phai(s2);
+    printf("%s",s2);
 
 
 }
