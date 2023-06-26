@@ -1,11 +1,11 @@
 #include<stdio.h>
 #include<string.h>
-void cau11(char a1[], char b1[]){
+void cau11(char a1[], char b1[]){ // b1 = defgh = 5
 	int i,j;
-	for(i=0;i<strlen(a1);i++){
-		if(a1[i]==b1[0]){
+	for(i=0;i<strlen(a1);i++){  // i=3
+		if(a1[i]==b1[0]){ //a1 = abc-----ikdefgh    *p+3 = a1 -> a1[3]
 			char c1[100];
-			strncpy(c1,a1+i,strlen(b1));
+			strncpy(c1,a1+i,strlen(b1)); // c1 = 'defgh'
 			if(strcmp(b1,c1)==0){
 				for(j=i;j<i+strlen(b1);j++){
 					a1[j]='-';
