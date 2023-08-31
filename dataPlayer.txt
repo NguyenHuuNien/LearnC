@@ -1,0 +1,33 @@
+Lionel Messi;Argentina;Paris Saint-Germain;52;27
+Kylian Mbappé;France;Paris Saint-Germain;48;22
+Erling Haaland;Norway;Borussia Dortmund;42;18
+Robert Lewandowski;Poland;Bayern Munich;41;13
+Vinicius Junior;Brazil;Real Madrid;40;16
+Mohamed Salah;Egypt;Liverpool;37;15
+Kevin De Bruyne;Belgium;Manchester City;36;12
+Pedri;Spain;Barcelona;35;17
+Jude Bellingham;England;Borussia Dortmund;34;14
+Trent Alexander-Arnold;England;Liverpool;33;12
+Karim Benzema;France;Real Madrid;32;19
+Bruno Fernandes;Portugal;Manchester United;31;16
+Joshua Kimmich;Germany;Bayern Munich;30;15
+Frenkie de Jong;Netherlands;Barcelona;29;14
+Bernardo Silva;Portugal;Manchester City;28;13
+João Félix;Portugal;Atlético Madrid;27;12
+Karim Adeyemi;Germany;Borussia Dortmund;26;10
+Jorginho;Italy;Chelsea;25;10
+Phil Foden;England;Manchester City;24;11
+Vinicius Jr.;Brazil;Real Madrid;23;10
+Ruben Dias;Portugal;Manchester City;22;11
+Lautaro Martínez;Argentina;Inter Milan;21;10
+Sadio Mané;Senegal;Liverpool;20;9
+Nicolò Barella;Italy;Inter Milan;19;10
+Nicolò Zaniolo;Italy;AS Roma;18;9
+Theo Hernández;France;AC Milan;17;10
+Bukayo Saka;England;Arsenal;16;9
+Pedri;Spain;Barcelona;15;8
+Mason Mount;England;Chelsea;14;8
+Rodrygo;Brazil;Real Madrid;13;8
+David Alaba;Austria;Real Madrid;12;7
+Jamal Musiala;Germany;Bayern Munich;11;7
+Kai Havertz;Germany;Chelsea;10;6

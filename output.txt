@@ -1,0 +1,68 @@
+Lionel	Messi		Argentina		Paris Saint-Germain
+Kylian	Mbappé		France		Paris Saint-Germain
+Erling	Haaland		Norway		Borussia Dortmund
+Robert	Lewandowski		Poland		Bayern Munich
+Vinicius	Junior		Brazil		Real Madrid
+Mohamed	Salah		Egypt		Liverpool
+Kevin	De		Belgium		Manchester City
+Pedri			Spain		Barcelona
+Jude	Bellingham		England		Borussia Dortmund
+Trent	Alexander-Arnold		England		Liverpool
+Karim	Benzema		France		Real Madrid
+Bruno	Fernandes		Portugal		Manchester United
+Joshua	Kimmich		Germany		Bayern Munich
+Frenkie	de		Netherlands		Barcelona
+Bernardo	Silva		Portugal		Manchester City
+João	Félix		Portugal		Atlético Madrid
+Karim	Adeyemi		Germany		Borussia Dortmund
+Jorginho			Italy		Chelsea
+Phil	Foden		England		Manchester City
+Vinicius	Jr.		Brazil		Real Madrid
+Ruben	Dias		Portugal		Manchester City
+Lautaro	Martínez		Argentina		Inter Milan
+Sadio	Mané		Senegal		Liverpool
+Nicolò	Barella		Italy		Inter Milan
+Nicolò	Zaniolo		Italy		AS Roma
+Theo	Hernández		France		AC Milan
+Bukayo	Saka		England		Arsenal
+Pedri			Spain		Barcelona
+Mason	Mount		England		Chelsea
+Rodrygo			Brazil		Real Madrid
+David	Alaba		Austria		Real Madrid
+Jamal	Musiala		Germany		Bayern Munich
+Kai	Havertz		Germany		Chelsea
+Ho	Ten		QuocTich		DoiBong		SoBanThang	SoKienTao
+Kai	Havertz		Germany		Chelsea		10	6
+Jamal	Musiala		Germany		Bayern Munich		11	7
+David	Alaba		Austria		Real Madrid		12	7
+Rodrygo			Brazil		Real Madrid		13	8
+Mason	Mount		England		Chelsea		14	8
+Pedri			Spain		Barcelona		15	8
+Bukayo	Saka		England		Arsenal		16	9
+Theo	Hernández		France		AC Milan		17	10
+Nicolò	Zaniolo		Italy		AS Roma		18	9
+Nicolò	Barella		Italy		Inter Milan		19	10
+Sadio	Mané		Senegal		Liverpool		20	9
+Lautaro	Martínez		Argentina		Inter Milan		21	10
+Ruben	Dias		Portugal		Manchester City		22	11
+Vinicius	Jr.		Brazil		Real Madrid		23	10
+Phil	Foden		England		Manchester City		24	11
+Jorginho			Italy		Chelsea		25	10
+Karim	Adeyemi		Germany		Borussia Dortmund		26	10
+João	Félix		Portugal		Atlético Madrid		27	12
+Bernardo	Silva		Portugal		Manchester City		28	13
+Frenkie	de		Netherlands		Barcelona		29	14
+Joshua	Kimmich		Germany		Bayern Munich		30	15
+Bruno	Fernandes		Portugal		Manchester United		31	16
+Karim	Benzema		France		Real Madrid		32	19
+Trent	Alexander-Arnold		England		Liverpool		33	12
+Jude	Bellingham		England		Borussia Dortmund		34	14
+Pedri			Spain		Barcelona		35	17
+Kevin	De		Belgium		Manchester City		36	12
+Mohamed	Salah		Egypt		Liverpool		37	15
+Vinicius	Junior		Brazil		Real Madrid		40	16
+Robert	Lewandowski		Poland		Bayern Munich		41	13
+Erling	Haaland		Norway		Borussia Dortmund		42	18
+Kylian	Mbappé		France		Paris Saint-Germain		48	22
+Lionel	Messi		Argentina		Paris Saint-Germain		52	27
+							0	0
