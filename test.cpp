@@ -1,54 +1,54 @@
 #include<iostream>
-#include<fstream>
 #include<vector>
-#include<string>
-#include<sstream>
 
 using namespace std;
 
-
-fstream in, out;
-struct Player
-{
-	string name;
-	string team;
-	int goals;
-};
-
-void xuly() {
-	vector<Player> v;
-	string s;
-	int dem=0;
-	while (getline(in, s)) {
-		Player pl;
-		istringstream iss(s);
-		getline(iss, pl.name, ',');
-		getline(iss, pl.team, ',');
-		string g;
-		getline(iss, g, ',');
-		pl.goals = stoi(g);
-		v.push_back(pl);
-		dem += pl.goals;
+void giao(vector<int> v1, vector<int> v2) {
+	for (int o : v1) {
+		for (int t : v2) {
+			if (o == t) {
+				cout << o << " ";
+				break;
+			}
+		}
 	}
-	out << dem;
+	cout << endl;
 }
 
-int main(int argc, char* argv[]) {
-	if (argc != 3) {
-		out << "Khong the mo file";
-		return 0;
+void khongGiao(vector<int> v1, vector<int> v2) {
+	bool check;
+	for (int o : v1) {
+		check = true;
+		for (int t : v2) {
+			if (o == t) {
+				check = false;
+				break;
+			}
+		}
+		if (check) {
+			cout << o << " ";
+		}
 	}
-	in.open(argv[1], ios::in);
-	out.open(argv[2], ios::out);
 
-	if (in.is_open()) {
-		xuly();
+	for (int o : v2) {
+		check = true;
+		for (int t : v1) {
+			if (o == t) {
+				check = false;
+				break;
+			}
+		}
+		if (check) {
+			cout << o << " ";
+		}
 	}
-	else {
-		out << "File chua duoc mo";
-		return 0;
-	}
-	in.close();
-	out.close();
+	cout << endl;
+}
+
+int main() {
+	vector<int> v1 = {1,2,4,5,7};
+	vector<int> v2 = {1,2,8,9};
+	giao(v1, v2);
+	khongGiao(v1, v2);
 	return 0;
 }
