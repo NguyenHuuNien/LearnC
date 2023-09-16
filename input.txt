@@ -1,4 +1,1 @@
-1,nam,hai,20
-2,nu,ba,10
-3,nam,tu,50
-4,nu,bay,100
+donal bi donal bi bi tot BI donal bi
