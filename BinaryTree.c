@@ -29,30 +29,14 @@ Node* leftMost(Node* start) {
 	return cur;
 }
 
-Node* rightMost(Node* start) {
-	Node* cur = start;
-	while (cur->right != NULL) {
-		cur = cur->right;
-	}
-	return cur;
-}
 void printNode(Node* start) {
-	Node* p = leftMost(start);
 	Node* cur = start;
-	if (cur->value == p->value) return;
-	else cur = p;
-	while (cur != NULL) {
-		if (cur->right != NULL) {
-			printf("%d ", cur->value);
-			printNode(cur->right);
-			cur = cur->prev;
-		}
-		else {
-			printf("%d ", cur->value);
-			cur = cur->prev;
-		}
+	if (cur == NULL) return;
+	else {
+		printNode(cur->left);
+		printf("%d ", cur->value);
+		printNode(cur->right);
 	}
-	printf("%d \n", cur->value);
 }
 
 Node* search(Node* start, int val) {
@@ -118,6 +102,7 @@ Node* remove(Node* start, int val) {
 			}
 		}
 	}
+	return start;
 }
 
 int main() {
@@ -125,6 +110,10 @@ int main() {
 	start = insert(start, 6);
 	start = insert(start, 4);
 	start = insert(start, 2);
+	start = insert(start, 8);
+	start = insert(start, 3);
+	start = insert(start, 2);
+	start = remove(start, 2);
 	printNode(start);
 	return 0;
 }
