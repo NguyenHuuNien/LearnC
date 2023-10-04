@@ -29,6 +29,14 @@ Node* leftMost(Node* start) {
 	return cur;
 }
 
+Node* rightMost(Node* start) {
+	Node* cur = start;
+	while (cur->right != NULL) {
+		cur = cur->right;
+	}
+	return cur;
+}
+
 void printNode(Node* start) {
 	Node* cur = start;
 	if (cur == NULL) return;
@@ -82,38 +90,107 @@ Node* insert(Node* start, int val) {
 
 Node* remove(Node* start, int val) {
 	Node* cur = start;
-	while (cur != NULL) {
-		if (cur->value == val) {
-			if (cur->value >= cur->prev->value) {
-				cur->prev->right = cur->right;
-				cur->right->prev = cur->prev;
+	if (cur->value == val) {
+		if (cur->left == NULL) {
+			Node* tmp = cur->right;
+			free(start);
+			return tmp;
+		}
+		else if (cur->right == NULL) {
+			Node* tmp = cur->left;
+			free(start);
+			return tmp;
+		}
+		else {
+			Node* p = rightMost(cur->left);
+			p->right = cur->right;
+			cur->right->prev = p;
+			return cur->left;
+		}
+	}
+	else {
+		if (cur->value > val) {
+			Node* p = remove(start->left, val);
+			cur->left = p;
+			p->prev = cur;
+			return start;
+		}
+		else {
+			Node* p = remove(start->right, val);
+			cur->right = p;
+			p->prev = cur;
+			return start;
+		}
+	}
+}
+
+Node* next(Node* start, int val) {
+	Node* cur = start;
+	if (cur->value == val) {
+		if (cur->right == NULL) {
+			if (cur->prev->value < val) {
+				return NULL;
 			}
-			else {
-				cur->prev->left = cur->left;
-				cur->left->prev = cur->prev;
+			else if (cur->prev->value > val) {
+				return cur->prev;
 			}
 		}
 		else {
-			if (val < cur->value) {
-				cur = cur->left;
-			}
-			else {
-				cur = cur->right;
-			}
+			return leftMost(cur->right);
 		}
 	}
-	return start;
+	else {
+		if (cur->value > val) {
+			return next(cur->left, val);
+		}
+		else {
+			return next(cur->right, val);
+		}
+	}
+}
+
+Node* prev(Node* start, int val) {
+	Node* cur = start;
+	if (cur->value == val) {
+		if (cur->left == NULL) {
+			if (cur->prev->value > val) {
+				return NULL;
+			}
+			else if(cur->prev->value < val){
+				return cur->prev;
+			}
+		}
+		else {
+			return rightMost(cur->left);
+		}
+	}
+	else {
+		if (cur->value > val) {
+			return prev(cur->left, val);
+		}
+		else {
+			return prev(cur->right, val);
+		}
+	}
 }
 
 int main() {
-	start = insert(start, 7);
-	start = insert(start, 6);
-	start = insert(start, 4);
-	start = insert(start, 2);
-	start = insert(start, 8);
+	start = insert(start, 5);
 	start = insert(start, 3);
+	start = insert(start, 9);
+	start = insert(start, 1);
+	start = insert(start, 4);
+	start = insert(start, 7);
+	start = insert(start, 11);
+	start = insert(start, 0);
 	start = insert(start, 2);
-	start = remove(start, 2);
-	printNode(start);
+	start = insert(start, 6);
+	start = insert(start, 8);
+	start = insert(start, 10);
+
+	printf("%d ", prev(start, 0)->value);
+
+	//printNode(start);
+
 	return 0;
 }
