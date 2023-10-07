@@ -188,7 +188,9 @@ int main() {
 	start = insert(start, 8);
 	start = insert(start, 10);
 
-	printf("%d ", prev(start, 0)->value);
+	Node* kq = search(start, 11);
+
+	printf("%d ", kq->value);
 
 	//printNode(start);
 
