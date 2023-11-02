@@ -1,20 +1,60 @@
 #include<iostream>
-#include<sstream>
-#include<set>
-#include<string>
 
 using namespace std;
 
 int main() {
-	set<string> st;
-	string s = "When the baby can hold tableware from their meals, can sit to children to eat their own meals in the stool, mothers are fully prepared to clean up the mess. ";
-	istringstream iss(s);
-	string line;
-	while (iss >> line) {
-		st.insert(line);
+	int m, n;
+	// nhap m va n
+	cin >> m >> n;
+	int arr[m][n];
+	for (int i = 0;i < m;i++) {
+		for (int j = 0;j < n;j++) {
+			cin >> arr[i][j];
+		}
 	}
-	for (string o : st) {
-		cout << o << " ";
+
+	// tinh tong cac phan tu cua ma tran
+	int sum = 0;
+	for (int i = 0;i < m;i++) {
+		for (int j = 0;j < n;j++) {
+			sum += arr[i][j];
+		}
 	}
+	cout << sum << endl;
+	
+	// tinh tong cac phan tu am cua ma tran
+	int sumAm = 0;
+	for (int i = 0;i < m;i++) {
+		for (int j = 0;j < n;j++) {
+			if (arr[i][j] < 0) {
+				sumAm += arr[i][j];
+			}
+		}
+	}
+	if (sumAm == 0) cout << "Khong co phan tu am";
+	else cout << sumAm << endl;
+
+	// tim gt lon nhat va nho nhat tren duong cheo
+	int xMax, xMin;
+	int maxArr = arr[0][0], minArr = arr[0][0];
+	if (m != n) {
+		cout << "Ma tran khong co duong cheo" << endl;
+		return 0;
+	}
+	else {
+		for (int i = 0;i < m;i++) {
+			if (arr[i][i] < minArr) {
+				minArr = arr[i][i];
+				xMin = i;
+			}
+			else if (arr[i][i] > maxArr) {
+				maxArr = arr[i][i];
+				xMax = i;
+			}
+		}
+	}
+	cout << "Max: " << maxArr << " - vi tri: " << xMax << ":" << xMax << endl;
+	cout << "Min: " << minArr << " - vi tri: " << xMin << ":" << xMin << endl;
+
 	return 0;
 }
